@@ -65,7 +65,7 @@ class syntax_plugin_latex_common extends DokuWiki_Syntax_Plugin {
 
 	function getSort(){return 405; }
 	
-	function render($mode, &$renderer, $data) {
+	function render($mode, Doku_Renderer $renderer, $data) {
 //	  global $conf;
 	  if($data[1] != DOKU_LEXER_UNMATCHED) return true; // ignore entry/exit states
 	  
